@@ -1,58 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Nace Budjoni Edukcija | Homepage</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      *{
-        margin:0;
-        padding:0;
-      }
-      .top-navigation{
-        border-buttom:1px solid gray;
-        box-shadow: 0px 3px 10px gray;
-        overflow:hidden;
-      }
-    </style>
+  <title>Edukacija</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_c.css" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Cormorant+Infant|Jura|Lobster|Montserrat+Alternates&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
-  <body>
-      <div class="top-navigation w3-top">
-        <nav class="w3-bar w3-card-4 w3-border w3-white w3-text-black">
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Почетна</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">За нас</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Научи</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Галерија</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Контакт</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Пријава</a>
-        </nav>
-      </div>
-      <main class="container w3-padding w3-margin">
-        <div class="w3-container w3-left">
-            <h2>Fixed Top Navigation</h2>
-            <h3>The w3-top class forces the navigation bar to stay at the top of the page, even when the user scrolls the page.</h3>
-            <h3>Scroll this page to see the effect.</h3>
-            <p>Some text to enable scrolling..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
+<body scroll="no"> 
+  <div class="topnav" id="myTopnav">
+    <a href="../../index.html">Почетна</a>
+    <a href="../.././portfolio/portfolio.html">Портфолио</a>
+      <div class="dropdown">
+        <button class="dropbtn">Преземи 
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">   
+          <div class="row">
+            <div class="column">
+              <h3>Презентации и вежби по електротехнички материјали</h3>
+              <a href="#">За втора година</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+
+            <div class="column">
+              <h3>Збирка задачи за програмирање</h3>
+              <a href="#">Прва година</a>
+              <a href="#">Втора година</a>
+              <a href="#">Трета година</a>
+            </div>
+
+            <div class="column">
+              <h3>Презентации, задачи и вежби по веб програмирање и веб дизајн</h3>
+              <a href="#">Основи на изработка на вебстрани</a>
+              <a href="#">Java Script</a>
+              <a href="#">PHP</a>
+            </div>
+          </div>
         </div>
-      </main>
-  </body>
-</html>
+      </div>
+    <div class="dropdown"  >
+        <button class="dropbtn" class="active">Курсеви
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">   
+            <div class="row">
+            <div class="column">
+                <h3>Kурсеви по програмирање</h3>
+                <a href="c++_index.html" >C++</a>
+                <a href="#">C++ Oбјектно Програмирање</a>
+                <a href="#">VisualBasic.NET</a>
+            </div>
+            <div class="column">
+                <h3>Курсеви по веб дизајн</h3>
+                <a href="#">Основи на HTML</a>
+                <a href="#">Основи на CSS</a>
+                <a href="#">Основи на JavaScript</a>
+            </div>
+            <div class="column">
+                <h3>Во изработка се други курсеви</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <a href="#galerija">Галерија</a>
+    <a href="#about">За нас</a>
+    <a href="#about">Контакт</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+    }
+  </script>
+  <main>
+    <div class="w3-container w3-gray w3-arial w3-center">
+      <h1>Основи на програмирање со помош на програмски јазик С++</h1>
+    </div>
+    <div class="w3-container w3-light-gray">
+      <h3 class="w3-margin"style="font-family: 'Comfortaa'; font-size: 25x;">Со помош на овој курс ќе се запознаете со следниве поими:</h2>
+      <ul class="w3-container w3-padding w3-margin " style="font-size: 18px; font-family: 'Jura';">
+        <li>Со поимот програмирање, програма и програмски јазик.</li>
+        <li>Што се тоа алгоритми</li>
+        <li>Бинарен броен систем</li>
+        <li>Основи на програмскиот јазик С++ и негова синтакса</li>
+        <li>Основни поими и варијабли</li>
+        <li>Вежба 1: Влез и излез на внесениот број</li>
+        <li>Вежба 2: Калкулатор</li>
+        <li>Наредби IF, ELSE, IF-ELSE</li>
+        <li>Вежба 3: Парен број </li>
+        <li>Вежба 4: Калкулатор со повеќе опции </li>
+        <li>SWITCH CASE наредба</li>
+        <li>Вежба 5: Продавница</li>
+        <li>WHILE наредба</li>
+        <li>Вежба 6: Средна цифра</li>
+        <li>DO WHILE наредба</li>
+        <li>FOR наредба</li>
+        <li>Низи</li>
+        <li>Дводимензионални низи</li>
+        <li>Максимален и минимален број</li>
+        <li>Функции</li>
+        <li>Тест</li>
+      </ul>
+      <div class="w3-center">
+      <button id="myButton" onclick="location.href = 'programiranje.html';" class="w3-btn w3-round-xxlarge w3-large w3-gray" style="font-size:16px; font-family: cursive; font-weight: bold;">Започни со изучување на овој програмски јазик</button>
+      </div>
+      <script type="text/javascript">
+          document.getElementById("myButton").onclick = function () {
+              location.href = "programiranje.html";
+          };
+      </script>
+      <hr>
+  </main>
+  <footer class="w3-container w3-gray w3-center">
+    <p class="w3-margin">Изработил Иван Ивановски</p>
+  </footer>
+</body>
